@@ -1,0 +1,16 @@
+.die {
+    font-size: 3em;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    margin: 1em;
+    border-radius: 6px;
+}
+
+.diceGame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
