@@ -2,7 +2,7 @@ let diceArr = [];
 let diceNumber = 0;
 
 $("#generateDie").click(() => new Die());
-$("#rollDie").click(() => console.log(diceArr));
+$("#rollDie").click(() => diceArr.forEach(Die => Die.roll()));
 
 class Die {
   constructor(value) {
