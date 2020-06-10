@@ -3,6 +3,11 @@ let diceNumber = 0;
 
 $("#generateDie").click(() => new Die());
 $("#rollDie").click(() => diceArr.forEach(Die => Die.roll()));
+$("#sumDice").click( () => {
+    let sum = 0;
+    diceArr.forEach(Die => sum += Die.value);
+    alert(sum)
+})
 
 class Die {
   constructor(value) {
